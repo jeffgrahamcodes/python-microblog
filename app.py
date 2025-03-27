@@ -16,9 +16,7 @@ def create_app():
     host = os.getenv("MONGO_HOST")
     dbname = os.getenv("MONGO_DBNAME")
 
-    mongo_uri = (
-        f"mongodb+srv://{username}:{password}@python-microblog.1kbff8y.mongodb.net/"
-    )
+    mongo_uri = f"mongodb+srv://{username}:{password}@{host}/{dbname}?retryWrites=true&w=majority"
 
     client = MongoClient(mongo_uri)
     app.db = client.microblog
