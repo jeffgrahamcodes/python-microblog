@@ -11,14 +11,7 @@ def create_app():
 
     load_dotenv()
 
-    username = quote_plus(os.getenv("MONGO_USERNAME"))
-    password = quote_plus(os.getenv("MONGO_PASSWORD"))
-    host = os.getenv("MONGO_HOST")
-    dbname = os.getenv("MONGO_DBNAME")
-
-    mongo_uri = f"mongodb+srv://{username}:{password}@{host}/{dbname}?retryWrites=true&w=majority"
-
-    client = MongoClient(mongo_uri)
+    client = MongoClient(os.getenv("MONGODB_URI"))
     app.db = client.microblog
 
     @app.route("/", methods=["GET", "POST"])
