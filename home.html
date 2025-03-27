@@ -7,14 +7,15 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Microblog</title>
-    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="navbar">
       <div class="navbar__brand">
         <img
           class="navbar__logo"
-          src="/static/logo.svg"
+          src="logo.svg"
           alt="The Microblog logo"
         />Microblog
       </div>
@@ -48,25 +49,21 @@
       </section>
       <section>
         <h1>Recent posts</h1>
-        {% for entry in entries %}
         <article class="entry">
           <div>
-            <h2 class="entry__title">
-              {{ entry[0] | truncate(30, true) }}
-            </h2>
-            <time class="entry__date" datetime="{{ entry[1] }}"
-              >• {{ entry[2] }}</time
+            <h2 class="entry__title">Wntry Title</h2>
+            <time class="entry__date" datetime="26-03-2025"
+              >Mar 26</time
             >
           </div>
-          <p class="entry__content">{{ entry[0] }}</p>
+          <p class="entry__content">Entry Content</p>
         </article>
-        {% endfor %}
       </section>
     </main>
     <footer class="footer">
       <div class="footer__content">
         <section class="left">
-          <a class="footer__item">Made by Jose Salvatierra</a>
+          <a class="footer__item">Made by jeffgrahamcodes</a>
           <a class="footer__item">Check out my other projects</a>
         </section>
         <section class="right">
