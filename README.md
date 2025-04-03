@@ -94,6 +94,10 @@ This project is open source under the [MIT License](LICENSE).
 
 ---
 
-## 👨Author
+## Created By
 
-Built by [jeffgrahamcodes](https:jeffgraham.codes) — feel free to fork, clone, and contribute!
+**Jeff Graham**
+Full-Stack Cloud Developer & Educator
+[LinkedIn](https://linkedin.com/in/jeffgrahamcodes)
+[GitHub](https://github.com/jeffgrahamcodes)
+[jeffgraham.codes](https://jeffgraham.codes)
